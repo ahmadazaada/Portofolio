@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>CETREKAN LAMPU</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+        integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+</head>
+<style>
+    .button-error {
+        background: rgb(202, 60, 60);
+        color: white;
+        /* this is a maroon */
+    }
+</style>
+
+<body>
+    <div class="flex justify-center items-center min-h-screen w-full
+     bg-gray-800 gap-4">
+
+        <!-- lampu1 1 -->
+        <div class="flex flex-col gap-2 py-4 items-center">
+            <img src="ASEET/off.gif" alt="" id="lampu1" />
+            <label for="default-toggle1"
+                class="relative inline-block h-8 w-14 cursor-pointer rounded-full bg-gray-300 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-blue-500">
+                <input type="checkbox" id="default-toggle1" class="sr-only
+                peer" onchange="saklar()"/>
+                <span
+                    class="absolute inset-y-0 start-0 m-1 size-6 rounded-full bg-gray-300 ring-[6px] ring-inset ring-white transition-all peer-checked:start-8 peer-checked:w-2 peer-checked:bg-white peer-checked:ring-transparent">
+                </span>
+            </label>
+        </div>
+
+        <!-- lampu1 2 -->
+        <div class="flex flex-col gap-2 py-4 items-center">
+            <img src="ASEET/off.gif" alt="" id="lampu2" />
+            
+            <label for="default-toggle2"
+            class="relative inline-block h-8 w-14 cursor-pointer rounded-full bg-gray-300 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-blue-500">
+            <input type="checkbox" id="default-toggle2" class="sr-only
+            peer" onchange="saklar()"/>
+            <span
+                class="absolute inset-y-0 start-0 m-1 size-6 rounded-full bg-gray-300 ring-[6px] ring-inset ring-white transition-all peer-checked:start-8 peer-checked:w-2 peer-checked:bg-white peer-checked:ring-transparent">
+            </span>
+        </label>
+        </div>
+
+        <!-- lampu1 3 -->
+        <div class="flex flex-col gap-2 py-4 items-center">
+            <img src="ASEET/off.gif" alt="" id="lampu3" />
+            <label for="default-toggle3"
+            class="relative inline-block h-8 w-14 cursor-pointer rounded-full bg-gray-300 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-blue-500">
+            <input type="checkbox" id="default-toggle3" class="sr-only
+            peer" onchange="saklar()"/>
+            <span
+                class="absolute inset-y-0 start-0 m-1 size-6 rounded-full bg-gray-300 ring-[6px] ring-inset ring-white transition-all peer-checked:start-8 peer-checked:w-2 peer-checked:bg-white peer-checked:ring-transparent">
+            </span>
+        </label>
+        </div>
+    </div>
+    <!-- ini adalah js kita -->
+    <script src="saklar.js" type="application/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "sesi-7",
+  "version": "1.0.0",
+  "description": "SESI 7 Backend",
+  "main": "index.js",
+  "scripts": {
+    "nyala": "nodemon index.js"
+  },
+  "keywords": [
+    "ahmada"
+  ],
+  "author": "zaada",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.9",
+    "rupiah-format": "^1.0.0"
+  }
+}

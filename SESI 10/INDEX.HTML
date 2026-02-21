@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Video</title>
+</head>
+<body>
+    <video controls>
+        <source src="./assets/Video.mp4"/>
+    </video>
+    <div>
+        <button onclick="play()">PLAY</button>
+        <button onclick="pause()">PAUSE</button>
+        <button onclick="minimize()">MINIMIZE</button>
+    </div>
+</body>
+
+<script>
+    function play() {
+        console.log("playing")
+    }
+    function pause() {
+        console.log("pause")
+    }
+    function minimize() {
+        console.log("minimize")
+    }
+</script>
+</html>
